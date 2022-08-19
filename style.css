@@ -1,0 +1,128 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: .3s;
+}
+
+a:hover {
+  color: hsl(178, 100%, 50%) !important;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  padding: 0 1.6rem;
+  color: hsl(215, 51%, 70%);
+  font-family: "Outfit", sans-serif;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 > a {
+  font-size: 2.2rem;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1.6rem;
+  display: inline-block;
+}
+
+main {
+  background-color: hsl(216, 50%, 16%);
+  max-width: 35rem;
+  padding: 2.4rem 2.4rem 3.2rem;
+  border-radius: 1.6rem;
+  box-shadow: 0 16px 40px hsl(217, 55%, 10%);
+}
+
+.card-image {
+  width: 100%;
+  height: 30rem;
+  border-radius: 1.2rem;
+  margin-bottom: 2.4rem;
+  background: url('./images/image-equilibrium.jpg') no-repeat center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.card-image::after {
+  display: block;
+  content: '';
+  background-color: hsl(178, 100%, 50%, .5);
+  background-image: url('./images/icon-view.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.2rem;
+  opacity: 0;
+  transition: .3s;
+}
+
+.card-image:hover::after {
+  opacity: 1;
+}
+
+
+main > p {
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 2.4rem;
+}
+
+.profile {
+  font-weight: 300;
+}
+
+.status,
+.status > p {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.status {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 2.8rem;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  font-size: 1.6rem;
+}
+
+.status p:nth-child(1) {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding-top: 2.8rem;
+  font-size: 1.6rem;
+}
+
+.profile > img {
+  width: 3.2rem;
+  height: auto;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+.profile a {
+  color: hsl(0, 0%, 100%);
+}
